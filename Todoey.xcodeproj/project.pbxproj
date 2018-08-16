@@ -12,7 +12,8 @@
 		A65A6CCA21247F7B00F614AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65A6CC821247F7B00F614AB /* Main.storyboard */; };
 		A65A6CCC21247F7C00F614AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65A6CCB21247F7C00F614AB /* Assets.xcassets */; };
 		A65A6CCF21247F7C00F614AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65A6CCD21247F7C00F614AB /* LaunchScreen.storyboard */; };
-		A65A6CDF2124BB3700F614AB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A6CDE2124BB3700F614AB /* Item.swift */; };
+		A65A6D032124C9FA00F614AB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A65A6D012124C9FA00F614AB /* DataModel.xcdatamodeld */; };
+		A65A6D052124FEF400F614AB /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A6D042124FEF400F614AB /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		A65A6CCB21247F7C00F614AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65A6CCE21247F7C00F614AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A65A6CD021247F7C00F614AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A65A6CDE2124BB3700F614AB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A65A6D022124C9FA00F614AB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A65A6D042124FEF400F614AB /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A65A6CDD2124BB2700F614AB /* Controller */,
 				A65A6CDC2124BB1E00F614AB /* View */,
 				A65A6CD021247F7C00F614AB /* Info.plist */,
+				A65A6CC421247F7B00F614AB /* AppDelegate.swift */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
@@ -67,7 +70,7 @@
 		A65A6CDB2124BB1200F614AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A65A6CDE2124BB3700F614AB /* Item.swift */,
+				A65A6D012124C9FA00F614AB /* DataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,8 +88,8 @@
 		A65A6CDD2124BB2700F614AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A65A6CC421247F7B00F614AB /* AppDelegate.swift */,
 				A65A6CC621247F7B00F614AB /* TodoListViewController.swift */,
+				A65A6D042124FEF400F614AB /* CategoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,8 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65A6D052124FEF400F614AB /* CategoryViewController.swift in Sources */,
 				A65A6CC721247F7B00F614AB /* TodoListViewController.swift in Sources */,
-				A65A6CDF2124BB3700F614AB /* Item.swift in Sources */,
+				A65A6D032124C9FA00F614AB /* DataModel.xcdatamodeld in Sources */,
 				A65A6CC521247F7B00F614AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +366,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A65A6D012124C9FA00F614AB /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A65A6D022124C9FA00F614AB /* DataModel.xcdatamodel */,
+			);
+			currentVersion = A65A6D022124C9FA00F614AB /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A65A6CB921247F7B00F614AB /* Project object */;
 }
